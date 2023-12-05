@@ -55,8 +55,18 @@
     src: url('../fonts/lato-v24-latin-700.woff2') format('woff2');
 }
 
+/* roboto-500 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 :root {
-    --main-font: Raleway;
+    --main-font: sans-serif;
     --font-2: 'Lato';
     --font-16: 16px;
     --font-18: 18px;
@@ -135,7 +145,7 @@ ol {
     gap: 63px;
 }
 
-.nav__item  a {
+.nav__item a {
     /* color: var(--color-282b22); */
     font-family: var(--main-font);
     font-size: var(--font-16);
@@ -143,3 +153,192 @@ ol {
     font-weight: var(--weight-500);
     line-height: 100%;
 }
+
+.header-part {
+    background: url('../images/jpg/hero-background.jpg'), linear-gradient(180deg, rgba(0, 0, 0, 0.20) -13.19%, rgba(0, 0, 0, 0.85) 94.01%);
+    /* background: url('/images/jpg/hero-background.jpg'), lightgray 0px -132.453px / 100% 155.454% no-repeat; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 75px 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header__main-title {
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.header__text {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 60px;
+}
+
+.header__btn {
+    padding: 22px 56px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 16px */
+    background: #AE7B3C;
+    box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* main section styles */
+.main-section {}
+
+.main-top {
+    padding: 140px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    flex-direction: column;
+}
+
+
+.main-section__title {
+    color: var(--, #282B22);
+    text-align: center;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    /* 57.5px */
+    text-transform: uppercase;
+}
+
+.main__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.main__item {
+    padding-left: 40px;
+    border-left: 2px solid rgb(157, 157, 157);
+
+}
+
+.card__number {
+    color: var(--, #282B22);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 24px */
+    margin-bottom: 60px;
+    opacity: 0.5;
+}
+
+.card__name {
+    color: var(--, #3D4A39);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 24px */
+    margin-bottom: 30px;
+}
+
+.main-bottom {
+    background-color: #3D4A39;
+    padding: 100px 0 30px;
+}
+
+.main-bottom-title {
+    color: #fff;
+    text-align: center;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+.main-bottom__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+
+.main-bottom__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-bottom__text {
+    color: #FFF;
+    opacity: 0.5;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    /* 31.2px */
+}
+
+.main-other {
+    padding: 140px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.main-other__info {
+    color: #282B22;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.main-other__text {
+    color:  #282B22;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    opacity: 0.8;
+}
+.main-other__info-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+}
+.main-other__info-section img:nth-child(1) {
+    position: absolute;
+    left: -180px;
+    bottom: 270px;
+}
+.main-other__info-section img:nth-child(4) {
+    position: relative;
+    bottom: 80px;
+    left: 50px;
+    /* left:750px; */
+}
+@media []
